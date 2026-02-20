@@ -3,7 +3,7 @@
 
 <x-backpack::menu-separator title="Administración de usuarios" />
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('user') }}"><i class="la la-user"></i> Usuarios</a></li>
-<li class="nav-item"><a class="nav-link" href="{{ backpack_url('') }}"><i class="la la-user-slash"></i> Peticiones de eliminación</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('user-delete-request') }}"><i class="la la-user-slash"></i> Peticiones de eliminación</a></li>
 
 <x-backpack::menu-separator title="Administración de noticias" />
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('article') }}"><i class="la la-newspaper"></i> Noticias</a></li>

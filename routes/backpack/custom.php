@@ -20,6 +20,7 @@ Route::group([
     Route::crud('tag', 'TagCrudController');
     Route::crud('article', 'ArticleCrudController');
     Route::crud('comment', 'CommentCrudController');
+    Route::crud('user-delete-request', 'UserDeleteRequestCrudController');
 }); // this should be the absolute last line of this file
 
 /**

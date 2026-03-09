@@ -18,7 +18,7 @@ class ArticleController extends Controller
         $mainArticles = $this->articleService->mainArticles();
 
         return response()->json([
-            'main_articles' => ArticleResource::collection($mainArticles)
+            'main_articles' => ArticleResource::collection($mainArticles),
         ]);
     }
 
@@ -27,7 +27,7 @@ class ArticleController extends Controller
         $article = $this->articleService->find($id);
 
         return response()->json([
-            'article' => new ArticleResource($article)
+            'article' => new ArticleResource($article),
         ]);
     }
 
@@ -36,7 +36,7 @@ class ArticleController extends Controller
         $articles = $this->articleService->indexByCategory($category);
 
         return response()->json([
-            'articles' => ArticleResource::collection($articles)
+            'articles' => ArticleResource::collection($articles),
         ]);
     }
 }
